@@ -1,0 +1,31 @@
+{
+  "name": "l-storage",
+  "version": "1.0.0",
+  "description": "一个基于typescript所开发的关于浏览器本地存储解决方案，A native storage solution for browsers based on TypeScript",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "types": "./types/index.d.ts",
+  "scripts": {},
+  "keywords": [
+    "localstorage",
+    "sessionstorage",
+    "typescript",
+    "javascript",
+    "cache",
+    "storage"
+  ],
+  "author": "LiuYang <984584014@qq.com> (https://github.com/web-liuyang)",
+  "bugs": {
+    "url": "https://github.com/web-liuyang/l-storage/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-liuyang/l-storage.git"
+  },
+  "homepage": "https://github.com/web-liuyang/l-storage#readme",
+  "license": "MIT",
+  "dependencies": {
+    "js-base64": "^3.6.0",
+    "js-cookie": "^2.2.1"
+  }
+}
