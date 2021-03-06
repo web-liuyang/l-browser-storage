@@ -1,4 +1,5 @@
-# l-storage
+# l-browser-storage
+
 ## 介绍
 
 通过typescript编写对浏览器存储方法封装，数据加密等。

@@ -1,6 +1,6 @@
 {
   "name": "l-browser-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个基于typescript所开发的关于浏览器本地存储解决方案，A native storage solution for browsers based on TypeScript",
   "main": "index.cjs.js",
   "module": "index.es.js",
