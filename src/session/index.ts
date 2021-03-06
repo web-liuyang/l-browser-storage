@@ -14,7 +14,7 @@ function get(key: string, options?: Pick<Session.IOptions, 'decode'>): any {
   if (!value) return null;
 
   if (options?.decode) {
-    return decode(value);
+    return JSON.parse(decode(value));
   } else {
     return JSON.parse(value);
   }
@@ -28,8 +28,9 @@ function get(key: string, options?: Pick<Session.IOptions, 'decode'>): any {
  * @param {boolean} [options.encode] - 是否加密
  */
 function set(key: string, value: any, options?: Pick<Session.IOptions, 'encode'>): void {
+
   if (options?.encode) {
-    sessionStorage.setItem(key, encode(value));
+    sessionStorage.setItem(key, encode(JSON.stringify(value)));
   } else {
     sessionStorage.setItem(key, JSON.stringify(value));
   }

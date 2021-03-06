@@ -14,7 +14,7 @@ function get(key: string, options?: Pick<Local.IOptions, 'decode'>): any {
   if (!value) return null;
 
   if (options?.decode) {
-    return decode(value);
+    return JSON.parse(decode(value));
   } else {
     return JSON.parse(value);
   }
@@ -28,8 +28,9 @@ function get(key: string, options?: Pick<Local.IOptions, 'decode'>): any {
  * @param {boolean} [options.encode] - 是否加密
  */
 function set(key: string, value: any, options?: Pick<Local.IOptions, 'encode'>): void {
+
   if (options?.encode) {
-    localStorage.setItem(key, encode(value));
+    localStorage.setItem(key, encode(JSON.stringify(value)));
   } else {
     localStorage.setItem(key, JSON.stringify(value));
   }

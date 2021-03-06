@@ -1,5 +1,5 @@
 {
-  "name": "l-storage",
+  "name": "l-browser-storage",
   "version": "1.0.0",
   "description": "一个基于typescript所开发的关于浏览器本地存储解决方案，A native storage solution for browsers based on TypeScript",
   "main": "index.cjs.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/web-liuyang/l-storage.git"
+    "url": "git+https://github.com/web-liuyang/l-browser-storage.git"
   },
   "private": true,
   "keywords": [
@@ -26,9 +26,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/web-liuyang/l-storage/issues"
+    "url": "https://github.com/web-liuyang/l-browser-storage/issues"
   },
-  "homepage": "https://github.com/web-liuyang/l-storage#readme",
+  "homepage": "https://github.com/web-liuyang/l-browser-storage#readme",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

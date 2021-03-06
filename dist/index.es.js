@@ -14,7 +14,7 @@ function get$1(key, options) {
   if (!value) return null;
 
   if (options === null || options === void 0 ? void 0 : options.decode) {
-    return decode(value);
+    return JSON.parse(decode(value));
   } else {
     return JSON.parse(value);
   }
@@ -30,7 +30,7 @@ function get$1(key, options) {
 
 function set$1(key, value, options) {
   if (options === null || options === void 0 ? void 0 : options.encode) {
-    localStorage.setItem(key, encode(value));
+    localStorage.setItem(key, encode(JSON.stringify(value)));
   } else {
     localStorage.setItem(key, JSON.stringify(value));
   }
@@ -74,7 +74,7 @@ function get(key, options) {
   if (!value) return null;
 
   if (options === null || options === void 0 ? void 0 : options.decode) {
-    return decode(value);
+    return JSON.parse(decode(value));
   } else {
     return JSON.parse(value);
   }
@@ -90,7 +90,7 @@ function get(key, options) {
 
 function set(key, value, options) {
   if (options === null || options === void 0 ? void 0 : options.encode) {
-    sessionStorage.setItem(key, encode(value));
+    sessionStorage.setItem(key, encode(JSON.stringify(value)));
   } else {
     sessionStorage.setItem(key, JSON.stringify(value));
   }
