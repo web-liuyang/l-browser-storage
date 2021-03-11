@@ -6,8 +6,9 @@
 
 封装的方法有localStorage、sessionStorage、cookie
 
-cookie是使用 [js-cookie ](https://www.npmjs.com/package/js-cookie), 具体可以看官方文档
+cookie是使用 [js-cookie](https://www.npmjs.com/package/js-cookie), 具体可以看官方文档
 
 
 
-[文档链接地址点我](https://1.15.90.226/typescript/l-browser-storage/)
+[文档点我](https://webliuyang.com/typescript/l-browser-storage/)
+

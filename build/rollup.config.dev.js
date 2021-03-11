@@ -6,14 +6,21 @@ import configFn from './rollup.config';
 
 import serve from 'rollup-plugin-serve';
 
-// const PORT = 3002;
-
-// const devSite = `http://127.0.0.1:${PORT}`;
-// const devPath = path.join('public', 'index.html');
-// const devUrl = `${devSite}/${devPath}`;
+const SERVE = {
+  open: true,
+  contentBase: ['dev'],
+  // execute function after server has begun listening
+  // onListening(server) {
+  //   const address = server.getAddress();
+  //   const host = address.host === '::' ? 'localhost' : address.host;
+  //   // by using a bound function, we can access options as `this`
+  //   const protocol = this.https ? 'https' : 'http';
+  //   console.log(`Server listening at ${protocol}://${host}:${address.port}/`);
+  // },
+};
 
 export default () => {
   const config = configFn('dev');
-  config.plugins.push(serve());
+  config.plugins.push(serve(SERVE));
   return config;
 };
